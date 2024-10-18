@@ -1,5 +1,5 @@
 # DocusignBlurStylus
-Blur Docusign PII using Stylus extension
+Blur Docusign PII using a userstyle extension
 
 # Description
 This script will blur the visible PII when using the Docusign ID Verification product. This can be useful when you are sharing your screen or recording a demo of Docusign ID Verification
@@ -12,4 +12,4 @@ A userstyle extension is required, common ones include:
 
 Then:
 
-📦 [Install the usercss](https://github.com/cyrilthirion/DocusignBlurStylus/raw/main/docusignblur.user.css). It supports automatic updates.
+📦 [Install the usercss](https://github.com/cyrilthirion/DocusignBlurCSS/raw/main/docusignblur.user.css). It supports automatic updates.
