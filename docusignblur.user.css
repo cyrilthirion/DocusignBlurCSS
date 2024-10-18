@@ -1,0 +1,24 @@
+/* ==UserStyle==
+@name        DocusignBlur
+@namespace   Docusign
+@version     0.0.9
+@homepageURL https://github.com/cyrilthirion/DocusignBlurStylus
+@updateURL   https://github.com/cyrilthirion/DocusignBlurStylus/raw/main/docusignblur.user.css
+@license     MIT
+@author      Cyril Thirion
+==/UserStyle== */
+
+@-moz-document url-prefix("https://sdk.onfido.com/") {
+/* Blur the video stream and image review */
+video:empty,
+span[data-qa="image-viewer"] > img {
+    filter: blur(.3rem)
+}
+}
+
+@-moz-document regexp("https://identity-.{1,2}\\.docusign\\.net/.*"), regexp("https://.{1,2}\\.identity\\.docusign\\.net/.*") {
+input[data-qa=enter-phone-number-input],
+h1[data-qa=jtm-sms-link-title-tag] + div {
+    filter: blur(.3rem)
+}
+}
