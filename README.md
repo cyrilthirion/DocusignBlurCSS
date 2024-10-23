@@ -1,4 +1,4 @@
-# DocusignBlurStylus
+# DocusignBlurCSS
 Blur Docusign PII using a userstyle extension
 
 # Description
