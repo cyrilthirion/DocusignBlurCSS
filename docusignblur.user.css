@@ -18,7 +18,15 @@ span[data-qa="image-viewer"] > img {
 
 @-moz-document regexp("https://identity-.{1,2}\\.docusign\\.net/.*"), regexp("https://.{1,2}\\.identity\\.docusign\\.net/.*") {
 input[data-qa=enter-phone-number-input],
-h1[data-qa=jtm-sms-link-title-tag] + div {
+h1[data-qa=jtm-sms-link-title-tag] + div,
+img[data-qa=id-document-image]{
     filter: blur(.3rem)
 }
+}
+
+@-moz-document regexp("https://proof-.{1,2}\\.docusign\\.net/.*"), regexp("https://.{1,2}\\.proof\\.docusign\\.net/.*") {
+img[data-qa=id-img-front],
+dl.def-list > dd{
+    filter: blur(.3rem)
+}   
 }
