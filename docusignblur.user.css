@@ -28,7 +28,7 @@ img[data-qa=id-document-image]{
 @-moz-document regexp("https://proof-.{1,2}\\.docusign\\.net/.*"), regexp("https://.{1,2}\\.proof\\.docusign\\.net/.*") {
 img[data-qa=id-img-front],
 img[data-qa=id-img-back],
-dl.def-list > dd{
+ul[data-qa=idv-properties] > div > li > span > span > span > span{
     filter: blur(.3rem)
 }   
 }
