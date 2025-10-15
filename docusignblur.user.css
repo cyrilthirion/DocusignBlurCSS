@@ -16,7 +16,7 @@ span[data-qa="image-viewer"] > img {
 }
 }
 
-@-moz-document regexp("https://identity-.{1,2}\\.docusign\\.net/.*"), regexp("https://.{1,2}\\.identity\\.docusign\\.net/.*") {
+@-moz-document regexp("https://identity-.{1,2}\\.docusign\\.net/.*"), regexp("https://.{1,2}\\.identity\\.docusign\\.net/.*"), regexp("https://.{1,2}\\.services\\.docusign\\.net/.*") {
 input[data-qa=enter-phone-number-input],
 h1[data-qa=jtm-sms-link-title-tag] + div,
 p#phoneNumber,
