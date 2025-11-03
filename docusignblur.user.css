@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        DocusignBlur
 @namespace   Docusign
-@version     0.1.0
+@version     0.1.1
 @homepageURL https://github.com/cyrilthirion/DocusignBlurStylus
 @updateURL   https://github.com/cyrilthirion/DocusignBlurStylus/raw/main/docusignblur.user.css
 @license     MIT
@@ -31,4 +31,10 @@ img[data-qa=id-img-back],
 ul[data-qa=idv-properties] > div > li > span > span > span > span{
     filter: blur(.3rem)
 }   
+}
+
+@-moz-document domain("franceconnect.gouv.fr") {
+    h2[data-testid="identity-fullname-label"] {
+        filter: blur(.6rem)
+    }
 }
